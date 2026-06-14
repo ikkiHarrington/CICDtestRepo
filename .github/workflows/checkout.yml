@@ -7,6 +7,7 @@ jobs:
       branch: main
     steps:
       - run: echo "Checking out branch ${{ env.branch }}"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
         with:
+          repository: ikkiHarrington/sampleSh
           ref: ${{ env.branch }}
