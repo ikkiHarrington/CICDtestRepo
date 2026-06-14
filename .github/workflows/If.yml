@@ -4,5 +4,5 @@ jobs:
   runOnlyIkki:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ github.actor == 'IkkiHarrignton' }}
+      - if: ${{ github.actor == 'ikkiHarrington' }}
         run: echo "Only Ikki Harrington can see this message."
