@@ -11,3 +11,4 @@ jobs:
         with:
           repository: ikkiHarrington/sampleSh
           ref: ${{ env.branch }}
+          token: ${{ secrets.GITHUB_TOKEN }}
