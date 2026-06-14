@@ -6,7 +6,7 @@ jobs:
     env:
       branch: main
     steps:
-      - run: echo "Checking out branch: ${{ branch }}"
+      - run: echo "Checking out branch ${{ branch }}"
       - uses: actions/checkout@v4
         with:
           ref: ${{ branch }}
