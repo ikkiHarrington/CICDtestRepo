@@ -1,0 +1,12 @@
+name: checkout
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      branch: main
+    steps:
+      - run: echo "Checking out branch: ${{ env.branch }}"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.branch }}
